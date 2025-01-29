@@ -1,4 +1,5 @@
 import Slider from 'react-slick';
+
 import spatula from '../assets/images/spatula.png';
 import spatula1 from '../assets/images/spatula1.png';
 import spatula2 from '../assets/images/spatula2.png';
