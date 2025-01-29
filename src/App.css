@@ -1,0 +1,606 @@
+.homeSection {
+  background-image: url('./assets/images/backgroundMain.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  padding: 30px 0;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .logo {
+  width: 105px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 14px;
+}
+.header .logo img {
+  width: 73px;
+}
+.header .navbar {
+  background-color: white;
+  border-radius: 16px;
+  padding: 12px 32px;
+  height: 44px;
+}
+.header .navbar .active {
+  color: #93a27c;
+}
+.header .navbar ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  gap: 48px;
+}
+.header .navbar ul li {
+  font-family: 'Open Sans', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 15px;
+  cursor: pointer;
+}
+.header .profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.header .profile div {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: #fff;
+}
+.header .profile div img {
+  width: 20px;
+}
+.header .profile .burger_menu {
+  display: none;
+}
+
+.homeSection .content {
+  margin-top: 240px;
+  width: 657px;
+}
+.homeSection .content h1 {
+  font-size: 52px;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #fff;
+}
+.homeSection .content .form {
+  margin-top: 84px;
+  display: flex;
+  align-items: center;
+  gap: 34px;
+  flex-wrap: wrap;
+}
+.homeSection .content .form .searchInput {
+  border: none;
+  border-radius: 16px;
+  width: 318px;
+  height: 48px;
+  padding-left: 18px;
+  background-color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  outline: none;
+}
+.homeSection .content .form .searchInput::placeholder {
+  color: #6d6d6d;
+}
+.link_button {
+  border: none;
+  width: 193px;
+  height: 48px;
+  padding-left: 18px;
+  background-color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  gap: 12px;
+  cursor: pointer;
+}
+.link_button div {
+  background-color: #93a27c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+.descritption_section {
+  background-color: #fff;
+  padding: 118px 0 152px;
+}
+.descritption_section h2 {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: black;
+  font-size: 48px;
+}
+.descritption_section .content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 47px;
+  gap: 13px;
+}
+.descritption_section .content .description {
+  background-color: #93a27c;
+  border-radius: 15px;
+  width: 525px;
+  height: 503px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  padding: 30px;
+}
+.descritption_section .content .description p {
+  font-family: 'Open Sans', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+  font-size: 16px;
+}
+.descritption_section .content .image {
+  background-image: url('./assets/images/descriptionCard.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  padding: 30px 36px;
+  width: 742px;
+  height: 503px;
+  border-radius: 15px;
+}
+
+.categories_section {
+  padding: 72px 0 152px;
+  background-color: #faf5f1;
+}
+.categories_section h2 {
+  color: #493829;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: black;
+  font-size: 56px;
+  width: 93%;
+}
+.categories_section h2 span {
+  color: #b89776;
+}
+.categories_section .content {
+  margin-top: 39px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+}
+.categories_card {
+  width: auto;
+  max-width: 290px;
+  height: 396px;
+  border-radius: 16px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  position: relative;
+}
+.categories_card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+  border-radius: 16px;
+}
+.categories_card p {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+  font-size: 20px;
+  z-index: 1;
+}
+.categories_card .link_button {
+  width: 100%;
+  justify-content: space-between;
+  padding-right: 4px;
+  z-index: 1;
+}
+
+.recommendation_section {
+  background-color: #f4f4f4;
+  padding: 76px 0;
+}
+
+.recommendation_section .inner > span {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #93a27c;
+  font-size: 18px;
+}
+.recommendation_section .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.recommendation_section .inner .link_button {
+  display: none;
+}
+.recommendation_section .title .link_button,
+.recommendation_section .inner .recommendation_card .link_button {
+  display: flex;
+}
+.recommendation_section h2 {
+  margin-top: 8px;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #2e2e2e;
+  font-size: 56px;
+  width: 50%;
+}
+.recommendation_section .content {
+  margin-top: 29px;
+}
+
+.recommendation_card {
+  width: auto;
+  max-width: 290px;
+  height: 420px;
+  padding: 16px;
+  border-radius: 24px;
+  background-color: #fff;
+}
+.recommendation_card > img {
+  width: 100%;
+  border-radius: 12px;
+}
+.recommendation_card > p {
+  margin-top: 16px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 16px;
+  color: black;
+}
+.recommendation_card > span {
+  margin-top: 4px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  color: #797979;
+}
+
+.recommendation_card > div {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.recommendation_card > div > h3 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  color: black;
+  display: flex;
+  align-items: end;
+  gap: 4px;
+}
+.recommendation_card > div > h3 > span {
+  text-decoration: underline;
+}
+.recommendation_card .counter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px #f0f0f0 solid;
+  width: 100px;
+  height: 32px;
+  border-radius: 100px;
+  padding: 4px;
+  font-size: 16px;
+  color: #797979;
+}
+.recommendation_card .counter div {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #ececec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.recommendation_card .link_button {
+  justify-content: space-between;
+  width: 100%;
+  padding-right: 4px;
+  border: 1px #f0f0f0 solid;
+  margin-top: 20px;
+}
+.slick-slider {
+  position: relative;
+}
+.slick-track {
+  display: flex;
+  gap: 40px;
+}
+.slick-list {
+  width: 100%;
+  overflow: hidden;
+}
+.slick-slide {
+  width: max-content !important;
+}
+.slick-arrow {
+  position: absolute;
+  bottom: 0;
+  top: 94.5%;
+}
+.slick-arrow.prev {
+  left: 36%;
+}
+.slick-arrow.next {
+  left: 61.5%;
+}
+.slick-dots {
+  margin-top: 40px;
+  list-style: none;
+  display: flex !important;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+.slick-dots button {
+  border: none;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #b9bfc5;
+}
+.slick-dots .slick-active button {
+  background-color: #93a27c;
+  color: white;
+}
+
+@media (max-width: 1110px) {
+  .slick-dots,
+  .slick-arrow {
+    display: none !important;
+  }
+}
+@media (max-width: 980px) {
+  .recommendation_card {
+    max-width: 240px;
+    height: 400px;
+  }
+  .slick-track {
+    gap: 30px;
+  }
+  .recommendation_card > p {
+    font-size: 14px;
+  }
+  .recommendation_card > span {
+    font-size: 11px;
+  }
+  .recommendation_card > div > h3 {
+    font-size: 18px;
+  }
+  .recommendation_card .counter {
+    width: 80px;
+    height: 28px;
+    font-size: 12px;
+  }
+  .recommendation_card .counter div {
+    width: 20px;
+    height: 20px;
+  }
+  .recommendation_card .counter div img {
+    width: 8px;
+  }
+  .recommendation_card .link_button {
+    height: 40px;
+    font-size: 12px;
+  }
+  .recommendation_card .link_button div {
+    width: 30px;
+    height: 30px;
+  }
+  .slick-track {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+  .slick-slide {
+    width: max-content;
+  }
+}
+@media (max-width: 890px) {
+  .categories_section .content {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 30px;
+  }
+  .recommendation_section h2 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 690px) {
+  .header .profile .burger_menu {
+    display: flex;
+  }
+  .header .navbar {
+    display: none;
+  }
+  .homeSection .content {
+    width: 100%;
+  }
+  .homeSection .content h1 {
+    font-size: 40px;
+  }
+  .homeSection .link_button {
+    width: 318px;
+    justify-content: space-between;
+    padding: 0 8px 0 20px;
+    height: 56px;
+  }
+  .homeSection .content .form .searchInput {
+    height: 56px;
+  }
+  .descritption_section h2 {
+    font-size: 35px;
+  }
+  .descritption_section .content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .descritption_section .content .description,
+  .descritption_section .content .image {
+    width: 100%;
+  }
+  .categories_section h2 {
+    font-size: 46px;
+  }
+  .recommendation_section h2 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 550px) {
+  .homeSection .content h1 {
+    text-align: center;
+    font-size: 35px;
+  }
+  .homeSection .content .form {
+    justify-content: center;
+    margin-top: 72px;
+    gap: 16px;
+  }
+  .descritption_section h2 {
+    font-size: 30px;
+  }
+  .descritption_section .content .description,
+  .descritption_section .content .image {
+    height: 400px;
+  }
+  .categories_section h2 {
+    font-size: 28px;
+  }
+  .categories_card {
+    max-width: 200px;
+    height: 300px;
+  }
+  .categories_card p {
+    font-size: 16px;
+  }
+  .categories_card .link_button {
+    height: 32px;
+  }
+  .categories_card .link_button div {
+    width: 24px;
+    height: 24px;
+  }
+  .recommendation_section h2 {
+    font-size: 40px;
+  }
+  .recommendation_section .inner .link_button {
+    display: flex;
+    margin-top: 32px;
+    width: 100% !important;
+    justify-content: space-between;
+    padding-right: 4px;
+  }
+  .recommendation_section .title .link_button {
+    display: none;
+  }
+}
+@media (max-width: 435px) {
+  .categories_card {
+    max-width: 165px;
+    height: 195px;
+    padding: 12px;
+  }
+  .categories_card .link_button {
+    font-size: 10px;
+  }
+  .categories_section .content {
+    gap: 15px;
+  }
+  .categories_section h2 {
+    width: 100%;
+  }
+  .recommendation_section > span {
+    font-size: 16px;
+  }
+  .recommendation_section h2 {
+    font-size: 28px;
+    width: 100%;
+  }
+  .recommendation_card p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+@media (max-width: 370px) {
+  .homeSection .content {
+    margin-top: 25px;
+  }
+  .homeSection .content .form {
+    margin-top: 72px;
+  }
+  .homeSection .content h1 {
+    font-size: 30px;
+  }
+  .descritption_section h2 {
+    font-size: 28px;
+  }
+  .descritption_section .content .description,
+  .descritption_section .content .image {
+    height: 275px;
+    padding: 20px;
+  }
+  .descritption_section .link_button {
+    width: 100% !important;
+    justify-content: space-between;
+    padding-right: 4px;
+  }
+}
